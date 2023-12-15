@@ -1,0 +1,112 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".IdentifyActivity">
+
+<ImageView
+    android:id="@+id/backBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="8dp"
+    android:src="@drawable/ico_back"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<androidx.camera.view.PreviewView
+    android:id="@+id/viewFinder"
+    android:layout_width="360dp"
+    android:layout_height="360dp"
+    android:background="@drawable/border_imageview"
+    android:clipToOutline="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.49"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+
+    app:layout_constraintVertical_bias="0.23">
+
+</androidx.camera.view.PreviewView>
+
+    <ImageView
+        android:id="@+id/captured_image"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/border_imageview"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23" />
+
+<Button
+    android:id="@+id/library_button"
+    android:layout_width="155dp"
+    android:layout_height="64dp"
+    android:text="Thư viện"
+    app:layout_constraintBottom_toTopOf="@+id/viewFinder"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.898"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.655" />
+
+<Button
+    android:id="@+id/image_capture_button"
+    android:layout_width="155dp"
+    android:layout_height="64dp"
+    android:text="Chụp ảnh"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/predict"
+    app:layout_constraintVertical_bias="0.092" />
+
+<TextView
+    android:id="@+id/predict"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:text="123"
+    android:textSize="12dp"
+    android:visibility="invisible"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/viewFinder" />
+
+<Button
+    android:id="@+id/retake_button"
+    android:layout_width="149dp"
+    android:layout_height="66dp"
+    android:text="Chụp lại"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/cbtn"
+    app:layout_constraintHorizontal_bias="0.505"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/image_capture_button"
+    app:layout_constraintVertical_bias="0.0" />
+
+<Button
+    android:id="@+id/cbtn"
+    android:layout_width="149dp"
+    android:layout_height="66dp"
+    android:text="Tìm kiếm"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.9"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/image_capture_button"
+    app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

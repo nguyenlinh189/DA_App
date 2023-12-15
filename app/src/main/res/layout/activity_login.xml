@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#F5EFED"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Đăng Nhập"
+    android:textColor="@color/brown"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    android:layout_marginTop="30dp"
+    android:gravity="center"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="40dp">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Email: "
+        android:layout_alignBottom="@id/eemail"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="@id/eemail"
+        android:layout_marginRight="10dp"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        />
+    <EditText
+        android:id="@+id/eemail"
+        android:layout_toRightOf="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:imeOptions="actionNext"
+        android:hint="example@gmail.com"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Mật khẩu: "
+        android:layout_alignBottom="@id/epass"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="@id/epass"
+        android:layout_marginRight="10dp"
+        android:textAppearance="?attr/textAppearanceTitleMedium"/>
+    <EditText
+        android:id="@+id/epass"
+        android:layout_toRightOf="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:imeOptions="actionNext"
+        android:hint="nhập passwood"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        />
+</RelativeLayout>
+<Button
+    android:layout_marginTop="20dp"
+    android:id="@+id/btn_login"
+    android:text="Đăng nhập"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"/>
+
+<Button
+    android:id="@+id/btn_google"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:text="Đăng nhập với Google" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn chưa có tài khoản?"/>
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Đăng kí ngay"
+        android:textStyle="italic|bold"
+        android:textColor="#239BFA"/>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/ico_search"
+        android:title="Thuật ngữ" />
+
+    <item
+        android:id="@+id/navigation_library"
+        android:icon="@drawable/ico_library"
+        android:title="Thư viện gỗ" />
+    <item
+        android:id="@+id/navigation_inforAcc"
+        android:icon="@drawable/ic_account"
+        android:title="Tài khoản" />
+</menu>
